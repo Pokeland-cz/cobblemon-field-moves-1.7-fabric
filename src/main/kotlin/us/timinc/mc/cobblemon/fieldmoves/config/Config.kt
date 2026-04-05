@@ -5,5 +5,4 @@ class Config {
     val debug: Boolean = false
     val mustBeFirst: Boolean = true
     val synchronizeChance: Double = 1.0
-    val addDropsToBundles: Boolean = false
 }

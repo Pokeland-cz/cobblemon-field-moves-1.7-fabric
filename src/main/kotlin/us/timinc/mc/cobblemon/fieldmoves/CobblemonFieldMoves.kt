@@ -5,7 +5,6 @@ import net.fabricmc.api.ModInitializer
 import net.minecraft.resources.ResourceLocation
 import us.timinc.mc.cobblemon.fieldmoves.config.Config
 import us.timinc.mc.cobblemon.fieldmoves.config.ConfigBuilder
-import us.timinc.mc.cobblemon.fieldmoves.droppers.FieldMovesDroppers
 import us.timinc.mc.cobblemon.fieldmoves.influences.CuteCharm
 import us.timinc.mc.cobblemon.fieldmoves.influences.SynchronizedNature
 
@@ -16,7 +15,6 @@ object CobblemonFieldMoves : ModInitializer {
     override fun onInitialize() {
         PlayerSpawnerFactory.influenceBuilders.add(::SynchronizedNature)
         PlayerSpawnerFactory.influenceBuilders.add(::CuteCharm)
-        FieldMovesDroppers.load()
     }
 
     fun modIdentifier(name: String): ResourceLocation {

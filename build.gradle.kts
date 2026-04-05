@@ -28,9 +28,6 @@ dependencies {
 
     // Cobblemon
     modImplementation("com.cobblemon:fabric:${property("cobblemon_version")}")
-
-    // Drop Loot Tables
-    modImplementation("maven.modrinth:cobblemon-droploottables:${property("droploottables_version")}")
 }
 
 tasks {
